@@ -3,13 +3,23 @@ import { initializeApp } from "firebase/app";
 import { getAuth } from "firebase/auth";
 
 const firebaseConfig = {
-  apiKey: "AIzaSyDGuG6Ogu9phnPXPPrQGfpjEIsYebYrT88",
-  authDomain: "hiremind-ai-37d38.firebaseapp.com",
-  projectId: "hiremind-ai-37d38",
-  storageBucket: "hiremind-ai-37d38.firebasestorage.app",
-  messagingSenderId: "6095090344",
-  appId: "1:6095090344:web:ebf7d4c5b6aa0c948ac89d",
-  measurementId: "G-8C24CJHQ2S"
+  apiKey: import.meta.env.VITE_FIREBASE_API_KEY,
+
+  authDomain:
+    import.meta.env.VITE_FIREBASE_AUTH_DOMAIN,
+
+  projectId:
+    import.meta.env.VITE_FIREBASE_PROJECT_ID,
+
+  storageBucket:
+    import.meta.env.VITE_FIREBASE_STORAGE_BUCKET,
+
+  messagingSenderId:
+    import.meta.env
+      .VITE_FIREBASE_MESSAGING_SENDER_ID,
+
+  appId:
+    import.meta.env.VITE_FIREBASE_APP_ID,
 };
 
 const app = initializeApp(firebaseConfig);
