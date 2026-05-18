@@ -1,16 +1,65 @@
-# React + Vite
+# HireMind AI
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+HireMind AI is a modern AI-powered mock interview preparation platform built using React, Firebase, Tailwind CSS, and Framer Motion. The application helps users practice interviews, generate technical questions, analyze performance, and manage their professional profile through an interactive dashboard.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## Features
 
-## React Compiler
+- Firebase Authentication (Signup/Login)
+- Protected Routes
+- AI Mock Interview Simulation
+- Interview Question Generator
+- Analytics Dashboard
+- Professional User Settings Page
+- Persistent Login Sessions
+- Responsive Modern UI
+- Animated Dashboard with Framer Motion
+- SaaS-style Interface Design
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+---
 
-## Expanding the ESLint configuration
+## Tech Stack
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+### Frontend
+- React.js
+- React Router DOM
+- Tailwind CSS
+- Framer Motion
+- Recharts
+- Lucide React Icons
+
+### Backend / Services
+- Firebase Authentication
+
+### Deployment
+- Vercel
+
+---
+
+## Project Structure
+
+```txt
+src/
+│
+├── components/
+│   ├── Navbar.jsx
+│   └── ProtectedRoute.jsx
+│
+├── context/
+│   └── AuthContext.jsx
+│
+├── pages/
+│   ├── Analytics.jsx
+│   ├── Dashboard.jsx
+│   ├── Generate.jsx
+│   ├── Interview.jsx
+│   ├── Login.jsx
+│   ├── Settings.jsx
+│   └── Signup.jsx
+│
+├── firebase.js
+├── App.jsx
+├── main.jsx
+├── index.css
+└── App.css
